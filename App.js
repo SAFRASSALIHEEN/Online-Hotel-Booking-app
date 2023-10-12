@@ -1,11 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import StackNavigator from "../StackNavigator";
+import StackNavigator2 from "../my-app/StackNavigator2";
 
 export default function App() {
   return (
     <>
-      <StackNavigator />
+      <StackNavigator2 />
     </>
   );
 }

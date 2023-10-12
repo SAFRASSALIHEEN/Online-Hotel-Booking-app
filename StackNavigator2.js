@@ -12,7 +12,7 @@ import ProfileScreen from "./Screen/ProfileScreen";
 
 import { NavigationContainer } from "@react-navigation/native";
 
-const StackNavigator = () => {
+const StackNavigator2 = () => {
   const Tab = createBottomTabNavigator();
   const Stack = createNativeStackNavigator();
 
@@ -96,6 +96,6 @@ const StackNavigator = () => {
   );
 };
 
-export default StackNavigator;
+export default StackNavigator2;
 
 const styles = StyleSheet.create({});
