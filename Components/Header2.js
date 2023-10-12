@@ -2,7 +2,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { FontAwesome5 } from "@expo/vector-icons";
 
-const Header = () => {
+const Header2 = () => {
   return (
     <View
       style={{
@@ -39,6 +39,6 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header2;
 
 const styles = StyleSheet.create({});

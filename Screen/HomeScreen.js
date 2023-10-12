@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, ScrollView, Pressable } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
-import Header from "../Components/Header";
+import Header2 from "../Components/Header2";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -35,11 +35,15 @@ const HomeScreen = () => {
 
   return (
     <View>
-      <Header />
+      <Header2 />
     </View>
   );
 };
 
 export default HomeScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
