@@ -7,19 +7,17 @@ import { Entypo, Ionicons, AntDesign } from "@expo/vector-icons";
 import SavedScreen from "./Screen/SavedScreen";
 import BookingScreen from "./Screen/BookingScreen";
 import ProfileScreen from "./Screen/ProfileScreen";
-import LoginScreen from "./Screen/LoginScreen";
 
 import { NavigationContainer } from "@react-navigation/native";
-import RegisterScreen from "./Screen/RegisterScreen";
 
-
-const StackNavigator2 = () => {
+const StackNavigator = () => {
   const Tab = createBottomTabNavigator();
   const Stack = createNativeStackNavigator();
 
   function BottomTabs() {
     return (
       <Tab.Navigator>
+
         <Tab.Screen
           name="Home"
           component={HomeScreen}
@@ -87,27 +85,16 @@ const StackNavigator2 = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-       {/* <Stack.Screen
-          name="Login"
-          component={LoginScreen}
-          options={{ headerShown: false }}//change it to flase
-        />
-        <Stack.Screen
-          name="Register"
-          component={RegisterScreen}
-          options={{ headerShown: false }}//change it to flase
-        /> */}
         <Stack.Screen
           name="Main"
           component={BottomTabs}
           options={{ headerShown: false }}
         />
-        
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
-export default StackNavigator2;
+export default StackNavigator;
 
 const styles = StyleSheet.create({});
